@@ -9,10 +9,10 @@ const Card = (props) => {
     }
 
     const handleCompleteBtn = () =>{
-        setColorChange('gray-500');
+        setColorChange('grey');
     }
   return (
-    <div className={`flex flex-col justify-between bg-${colorChange} w-72 h-36 mx-10 my-10 mb-2 rounded-xl`}>
+    <div style={{backgroundColor:colorChange}} className={`border-2 flex flex-col justify-between  w-72 h-36 mx-10 my-10 mb-2 rounded-xl`}>
       <div className="p-4">
         <span className="font-bold">{props.notes}</span>
       </div>
