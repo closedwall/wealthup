@@ -16,7 +16,6 @@ const TodoList = () => {
   }, []);
 
   const handleDelete = (index) =>{
-    console.log("delete")
     const updatedNotesObj = [...notesObj];
   updatedNotesObj.splice(index, 1);
   setNotesObj(updatedNotesObj);
@@ -25,7 +24,6 @@ const TodoList = () => {
 
   const handleAddNotes = () => {
     if(notes.length) {
-    console.log("notes added to TodoList");
     setNotesObj(prev =>[...prev, notes]);
     setNotes("");
     }
